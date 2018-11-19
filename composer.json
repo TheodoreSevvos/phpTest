@@ -1,13 +1,19 @@
 {    
+    "name":"phpTest",
+    "description": "A dummy PHP project with Slim framework",
     "autoload": {
-        "classmap": [
-            "src\\"
-        ]
+        "psr-4":{
+            "": "src\\"
+        }
     },
     "require-dev": {
         "phpunit/phpunit": "^7"
     },
     "require": {
-        "slim/slim": "^3.0"
+        "slim/slim": "^3.0",
+        "monolog/monolog": "^1.24"
+    },
+    "scripts": {
+        "test": "phpunit"
     }
 }
